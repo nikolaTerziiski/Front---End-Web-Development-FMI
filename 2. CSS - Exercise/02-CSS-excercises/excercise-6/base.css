@@ -1,0 +1,42 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 1500px;
+	background-color: #fffbe2;
+}
+
+#red, #green, #blue, #silver {
+	width: 350px;
+	height: 200px;
+	border: 2px solid #000000;
+}
+
+#yellow {
+	width: 75px;
+	height: 75px;
+}
+
+#red{
+	margin-top: 300px;
+	margin-left: 400px;
+	background: red;
+}
+
+#green{
+	background: green;
+}
+
+#blue{
+	margin-top: 350px;
+	margin-left: 450px;
+	background: blue;
+}
+
+#silver {
+	background-color: silver;
+}
+
+#yellow{
+	background: yellow;
+}
+
