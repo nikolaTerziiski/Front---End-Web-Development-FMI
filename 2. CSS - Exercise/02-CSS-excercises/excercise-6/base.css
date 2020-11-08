@@ -17,8 +17,6 @@ body {
 }
 
 #red{
-	margin-top: 300px;
-	margin-left: 400px;
 	background: red;
 }
 
@@ -27,8 +25,6 @@ body {
 }
 
 #blue{
-	margin-top: 350px;
-	margin-left: 450px;
 	background: blue;
 }
 
