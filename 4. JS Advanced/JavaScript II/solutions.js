@@ -3,7 +3,6 @@ task2();
 task3();
 task4();
 task5();
-task6();
 task8();
 
 function task1() {
@@ -77,10 +76,6 @@ function task5() {
     }
 }
 
-function task6() {
-
-}
-
 function task8() {
 
         function PaymentMethod() {
@@ -99,7 +94,7 @@ function task8() {
             this.reduceFromAmount = function(amount) {
                 _amount -= amount;
             }
-            getAmount = function() {
+            this.getAmount = function() {
                 return `${this.output()} ${_amount}`;
             }
         }
