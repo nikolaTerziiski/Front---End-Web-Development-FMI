@@ -1,0 +1,83 @@
+
+body {
+    font-size: 16px;
+    background: linear-gradient(-100deg, #A2F2F1 0%, #B19AFE 100%);
+}
+#loginSection {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+#loginParagraph { 
+    color: #848694;
+    margin-bottom: 75px;
+    margin-top: -15px;
+    font-size: large;
+}
+#flutter {
+    margin-top: -5px;
+    font-size: 2rem;
+}
+.loginFrom {
+    max-width: 32rem;
+    width: 90%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 2.5rem;
+    
+    background-color: white;
+}
+.inputLogin {
+    margin-bottom: 40px;
+    padding: 3px 10px;
+    width: 100%;
+
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    border-bottom: 1px solid #4154E0;
+    color: black;
+}
+
+input[type="text"]:focus {
+    border-color: #557de0;
+    box-shadow: 0 1px 0 0 #557de0;
+}
+
+input[type="submit"] {
+    margin-top: 30px;
+    height: 35px;
+    width: 100%;
+    max-width: 10rem;
+    border-radius: 30px;
+
+    color: white;
+    background-color: #04abda;
+    border-color: #557de0;
+    float: right;
+}
+
+#createAccount {
+    margin-left: 250px;
+    margin-right: 15px;
+    margin-top: 30px;
+    float: right;
+    text-decoration: none;
+}
+
+@media (max-width: 890px) {
+    .inputLogin {
+        color: black;
+        outline-style: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color:  #557de0;
+        box-shadow: 0 1px 0 0 #557de0;
+        padding: 3px 10px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
