@@ -125,6 +125,7 @@ img {
     width: 50rem;
     height: 4rem;
     border-bottom: 1px solid gray;
+    margin-right: -50px;
 }
 #postArea{
     width:80%;
@@ -149,6 +150,7 @@ img {
 .firstPost{
     display:flex;
     border-bottom: 1.5px solid gray;
+    padding-bottom: 2rem;
 }
 
 .personalInfo{
@@ -164,4 +166,66 @@ img {
 .post-information{
     margin-top: 1.7rem;
     margin-left: 2rem;
+}
+#agoTime{
+    font-size: 16px;
+}
+
+.secondPost{
+    display:flex;
+    border-bottom: 1.5px solid gray;
+    padding-bottom: 2rem;
+    margin-bottom: 15px;
+}
+
+.second-post-information{
+    margin-top: 1.7rem;
+    margin-left: 2rem;
+}
+#thirdPictureFirstPost{
+    margin-top: -150px;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 3rem;
+    margin-bottom: 5px;
+}
+#thirdPictureSecondPost{
+    margin-top: -70px;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 3rem;
+    margin-bottom: 5px;
+}
+#firstDescription{
+    font-size: 20px;
+}
+
+.like{
+    height: 30px;
+    width: 30px;
+}
+.dislike{
+    height: 25px;
+    width: 25px;
+    margin-left: 5rem;
+    margin-top: -2.0rem;
+}
+.likeCount{
+    margin-left: 2rem;
+    margin-top: -1.4rem;
+}
+.dislikeCount{
+    margin-left : 7rem;
+    margin-top: -2.0rem;
+}
+.secondPostLike{
+    height: 30px;
+    width: 30px;
+}
+
+.secondPostDislike{
+    height: 25px;
+    width: 25px;
+    margin-left: 5rem;
+    margin-top: -2.0rem;
 }
