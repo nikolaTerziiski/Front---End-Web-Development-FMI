@@ -86,21 +86,21 @@
             document.getElementById("errors").appendChild(p);
             return false;
         }
-        if(!(password.match(/[A-Z]/g) && password.match(/[^a-zA-Z/]/g) && password.match(/[0-9]/g) && password.length >= 6))
+        if(password.match(/[A-Z]/g) && password.match(/[^a-zA-Z/]/g) && password.match(/[0-9]/g) && password.length >= 6)
         {
-       	 	p.innerText += "Invalid password";
-        	document.getElementById("errors").appendChild(p);
-        	return false;
+            if(password.indexOf('!') == -1 && password.indexOf('@') == -1 && password.indexOf('$') == -1 && password.indexOf('%') == -1 && password.indexOf('#') == -1 && password.indexOf('^') == -1 && password.indexOf('&') == -1 )
+            {
+                p.innerText += "Invalid password";
+                 document.getElementById("errors").appendChild(p);
+                return false;
+            }
+
+            window.login(valueOfMail, password);
+            alert("login succesfful!");
+            return setTimeout(returnTrue, 2000);
         }
-		if(password.indexOf('!') == -1 && password.indexOf('@') == -1 && password.indexOf('$') == -1 && password.indexOf('%') == -1 && password.indexOf('#') == -1 && password.indexOf('^') == -1 && password.indexOf('&') == -1 )
-        {
-            p.innerText += "Invalid password";
-            document.getElementById("errors").appendChild(p);
-            return false;
-		}
-		
-		window.login(valueOfMail, password);
-		
-        return true;
+		p.innerText += "Invalid password";
+        document.getElementById("errors").appendChild(p);
+        return false;
 	}
 </script>
