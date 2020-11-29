@@ -54,7 +54,7 @@ function validationLogin() {
 
         alert("login succesfful!");
         window.login(valueOfMail, password);
-        return setTimeout(returnTrue, 2000);
+        return setTimeout(true, 2000);
     }
     p.innerText += "Invalid password";
     document.getElementById("errors").appendChild(p);
@@ -124,13 +124,10 @@ function validationRegister() {
 
         window.register(username, email,password);
         alert("registration succesfful!");
-        return setTimeout(returnTrue, 2000);
+        return setTimeout(true, 2000);
     }
     p.innerText += "Invalid password";
     document.getElementById("errors").appendChild(p);
     return false;
-}
-function returnTrue() {
-    return true;
 }
 
