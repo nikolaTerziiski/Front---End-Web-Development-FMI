@@ -103,9 +103,19 @@
 			event.preventDefault();
 		});
 
+		div.querySelector('.post-close').addEventListener('click', event => {
+			const postId = event.target.getAttribute('data-id');
+			tweet.delete(postId);
+			document.getElementById('post-container').removeChild(event.target.parentNode.parentNode);
+			event.preventDefault();
+			
+			profilePosts.innerText = profilePosts.innerText - 1;
+		})
+
 	});
 
 	tweetsDB.on('child_changed', data => {
+
 	});
 
 	function validateUser() {
